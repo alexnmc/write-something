@@ -16,8 +16,6 @@ class Data extends Component{
    handleSubmit = (e) => {
     e.preventDefault()
     this.props.saveNotes(this.props.user._id)
-    this.props.getNotes(this.props.user._id) // need to rerender...
-    
    }
 
    
