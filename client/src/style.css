@@ -141,7 +141,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     width:370pt;
-    word-break: break-all;
+    word-break:break-word;
     margin-bottom:15pt;
 }
 
