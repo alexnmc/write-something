@@ -1,0 +1,225 @@
+
+
+body{
+    background-image: url('./Photos/notebook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appjs{
+    height:100vh;
+    width: 100vw;
+    position:relative;
+}
+
+
+ .logout,
+ .loginButton{
+    width:90pt;
+    height:24pt;
+    font-size:12pt;
+    margin-top:5pt;
+    border-radius: 3px;
+    background-color: rgb(172, 92, 0);
+    font-weight: bolder;
+    color:white;
+   
+
+ }
+
+ .login1{
+    width: 132pt;
+    height: 23.5pt;
+    border: 1px solid  rgba(2, 2, 2, 0.74);
+    background-color:  rgb(255, 235, 209);
+    color:black;
+    border-radius: 3px;
+    margin-top:7pt;
+    padding-left:3.5pt;
+}
+
+.loginForm,
+.login2{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:200pt;
+    font-family: helvetica;
+    font-size:20pt;
+}
+
+.logIn,
+.signUp{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:200pt;
+    font-size: 20pt;
+    font-family: helvetica;
+    margin:auto;
+}
+
+
+.home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+    margin:auto;
+}
+
+.logout{
+    width:90pt;
+    height:24pt;
+    font-size:12pt;
+    margin-top: 45vh;
+    position: fixed;
+}
+
+
+.alltext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:370pt;
+    
+    
+}
+
+.alltext2{
+    height:80vh;
+    width:380pt;
+    margin-right:20pt;
+    overflow: scroll;
+}
+
+
+.showNotes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width:370pt;
+    word-break: break-all;
+    margin-bottom:15pt;
+}
+
+
+.space{
+    min-height:100pt
+}
+
+.edit{
+    height:70pt;
+    margin-top: 10pt;
+}
+
+.buttonWrap{
+    display: flex;
+    width: 120pt;
+    justify-content: space-around;
+    margin-top:10pt;
+   
+}
+
+
+.h2{
+    color:rgb(255, 255, 255);
+    font-family: 'arial';
+    margin: 0pt;
+    font-size: 15pt;
+    position:relative;
+}
+
+
+.hello{
+   position:fixed;
+   text-align: start;
+   font-family: 'arial';
+   color: rgb(255, 255, 255);
+}
+
+h1{
+    font-family: 'arial black';
+    color: rgb(255, 255, 255);
+    margin-top: -10vh;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left:50pt;
+}
+
+textarea{
+    width:350pt;
+    height:200pt;
+    margin-top:100pt;
+    font-size: 14pt;
+    padding:5pt;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+    width:100vw;
+    height:80vh;
+    background-color: rgba(88, 54, 16, 0.904);
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+
+h3{
+    font-family: 'arial';
+    color: rgb(124, 159, 255);
+    margin-bottom:5pt;
+}
+
+.youwrote{
+    color:rgb(255, 174, 0);
+    font-family: 'arial';
+    margin-top: 0pt;
+    
+}
+
+.editButton{
+    width: 56px;
+    height: 27px;
+    border-radius: 2px;
+    border:2px solid rgb(30, 80, 35);
+    background-color: rgb(57, 116, 88);
+    color: rgb(241, 241, 241);
+    font-size:11pt;
+}
+
+
+.deleteButton{
+    background-color: rgba(175, 0, 0, 0.87);
+    color:  rgb(255, 254, 254);
+    width: 56px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 2px solid rgb(93, 28, 28);
+    display: inline;
+}
+
+.mainLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
