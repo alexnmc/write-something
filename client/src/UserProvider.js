@@ -116,7 +116,34 @@ class UserProvider extends Component {
         }
     }
 
+    logout2 = () => {
+        this.setState({
+            user:'',   // logout function for delete account
+            token: '',
+            toggle: true
+        })
+        localStorage.removeItem("user")
+        localStorage.removeItem("token")
+    }
+
+
     
+    deleteAll = (id) => {
+        axios.delete(`notes/delete/${id}`).then(response => {
+            alert(response.data)
+        })
+    }
+
+
+    handleErase = (id) => {
+        var answer = window.confirm("This will permanently delete you account, are you sure you want to proceed?")
+            if(answer){
+                this.handleDelete2(id)
+                this.logout2()
+                this.deleteAll(id)
+            }
+    }
+
     
     render() {
         return (
@@ -131,7 +158,7 @@ class UserProvider extends Component {
                    handleChange:this.handleChange,
                    handleDelete2: this.handleDelete2,
                    logout: this.logout,
-                   
+                   handleErase: this.handleErase,
                 }}>
                 {this.props.children}
             </Context.Provider>

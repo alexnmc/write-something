@@ -25,8 +25,8 @@ class Data extends Component{
     
      let notes = this.props.notes.map(item =>{
          return(
-             <div className = 'alltext'>
-                 {item.toggle?
+            <div className = 'alltext'>
+            { item.toggle?
                 <div key = {item._id} className = 'showNotes'>
                     <div className = 'space'>
                         <h3>{moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</h3> 
@@ -53,8 +53,7 @@ class Data extends Component{
                         <button className = "editButton" type="button" onClick = {this.props.handleTogglerReset}>Exit</button>
                     </div>
                 </div>
-             
-                 }
+            }
             </div>
          )
      })
@@ -75,6 +74,7 @@ class Data extends Component{
                 <button className = 'loginButton'>Save</button>
             </form>
             <h1>write something</h1>
+            <button  className = 'logout' onClick = {this.props.logout}>Log out</button>
             <div className = 'alltext2'>
                 {this.props.notes.length > 0?
                   notes

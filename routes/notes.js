@@ -85,6 +85,18 @@ notesRouter.put('/:id',  (req, res, next) => {      // express router reads the 
                 }
         )
 })  
+
+
+notesRouter.delete('/delete/:id', (req, res, next) => {  //delete all by ID 
+     
+    Notes.remove({userID: req.params.id},(err, data) => {
+        if (err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(202).send('deletion succesful')
+    })
+})
     
 
 

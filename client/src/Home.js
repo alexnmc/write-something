@@ -9,8 +9,9 @@ class Home extends Component {
     render(props){
         return (
             <div className = "home">
-               <button  className = 'logout' onClick = {this.props.logout}>Log out</button>
-               <Data/>
+                <Data/>
+                <p className = 'deleteAcount' onClick = {() => this.props.handleErase(this.props.user._id)}>delete account</p>
+               
             </div>
         )
     }

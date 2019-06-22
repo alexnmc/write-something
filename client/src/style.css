@@ -90,9 +90,20 @@ body{
     width:90pt;
     height:24pt;
     font-size:12pt;
-    margin-top: 45vh;
-    position: fixed;
+    position:fixed;
+    margin-top:75vh;
 }
+
+.deleteAcount{
+    margin-top: 44vh;
+    margin-left: 40vw;
+    font-size:15pt;
+    position:fixed;
+    font-family: 'tahoma';
+    color: rgb(251, 251, 251);
+    cursor: pointer;
+}
+
 
 
 .alltext{
@@ -107,7 +118,6 @@ body{
 .alltext2{
     height:80vh;
     width:380pt;
-    margin-right:20pt;
     overflow: scroll;
 }
 
@@ -160,14 +170,14 @@ body{
 h1{
     font-family: 'arial black';
     color: rgb(255, 255, 255);
-    margin-top: -10vh;
+    margin-top: -8vh;
 }
 
 .mainH1{
      margin-left: -30vw;
      margin-top:20pt;
      position: fixed;
-     font-size:28pt;
+     font-size: 30pt;
 }
 
 form{
