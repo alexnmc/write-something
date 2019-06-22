@@ -125,10 +125,11 @@ body{
     align-items: center;
     width:370pt;
    
+   
 }
 
 .alltext2{
-    height:80vh;
+    height:83vh;
     width:380pt;
     overflow: scroll;
 }
@@ -149,7 +150,7 @@ body{
 }
 
 .edit{
-    height:77pt;
+    height:79.5pt;
     margin-top: 10pt;
 }
 
@@ -210,7 +211,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     width:100vw;
-    height:80vh;
+    height:83vh;
     background-color:rgba(82, 40, 12, 0.911);
     border-top:2px solid white;
     border-bottom:2px solid white;
