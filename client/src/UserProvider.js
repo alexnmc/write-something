@@ -12,9 +12,8 @@ class UserProvider extends Component {
         this.state = {
             username: '',
             password: '',
-            repeat: '',
+            password2: '',
             toggle: true,
-            adminPassword: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
         }
@@ -27,7 +26,7 @@ class UserProvider extends Component {
                 toggle: !prevState.toggle,  //toggle from login to signin
                 username: '',
                 password: '',
-                repeat: ''
+                password2: ''
             }
         })
     }
@@ -68,7 +67,7 @@ class UserProvider extends Component {
         this.setState({
             username: '',
             password: '',
-            
+            password2: ''
         })
     }
 
@@ -81,12 +80,10 @@ class UserProvider extends Component {
             }
             this.signup(newUser)
             this.setState({
-                repeat: '',
                 username: '',
-                password: ''
-                
+                password: '',
+                password2: ''
             })
-       
     }
 
     
@@ -125,11 +122,7 @@ class UserProvider extends Component {
         return (
             <Context.Provider
                 value={{
-                   username:this.state.username,
-                   password: this.state.password,
-                   user: this.state.user,
-                   token: this.state.token,
-                   toggle: this.state.toggle,
+                   ...this.state,
                    editToggler : this.editToggler,
                    signup : this.signup,
                    login : this.login,

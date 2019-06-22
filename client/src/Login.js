@@ -63,9 +63,9 @@ const Login = (props) => {
                             <input
                                 className = "login1"
                                 type ='text'
-                                name ='repeat'
+                                name ='password2'
                                 placeholder ='repeat password:'
-                                value = {props.repeat}
+                                value = {props.password2}
                                 onChange = {props.handleChange}
                             />
                             <button className = 'loginButton'>Sign up</button>
