@@ -27,7 +27,7 @@ class UserProvider extends Component {
                 toggle: !prevState.toggle,  //toggle from login to signin
                 username: '',
                 password: '',
-                repeat: '',
+                repeat: ''
             }
         })
     }
@@ -81,9 +81,10 @@ class UserProvider extends Component {
             }
             this.signup(newUser)
             this.setState({
+                repeat: '',
                 username: '',
-                password: '',
-                repeat: ''
+                password: ''
+                
             })
        
     }
@@ -111,7 +112,7 @@ class UserProvider extends Component {
                 this.setState({
                     user:'',   // we logout by removing the token from state and local storage
                     token: '',
-                    
+                    toggle: true
                 })
             localStorage.removeItem("user")
             localStorage.removeItem("token")
