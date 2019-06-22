@@ -165,6 +165,18 @@ button{
     cursor: pointer;
 }
 
+.deleteAll{
+    width:80pt;
+    height:20pt;
+    font-size:10pt;
+    border-radius: 3px;
+    border: 0pt;
+    background-color: rgba(255, 0, 0, 0.918);
+    font-weight: bolder;
+    position: fixed;
+    color:white;
+    margin-top: 15vh;
+}
 
 .h2{
     color:rgb(255, 255, 255);
@@ -181,6 +193,8 @@ button{
    font-family: 'arial';
    color: rgb(255, 255, 255);
 }
+
+
 
 h1{
     font-family: 'arial black';

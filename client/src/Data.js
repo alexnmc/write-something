@@ -62,6 +62,7 @@ class Data extends Component{
     return(
         <div className = 'data'>
             <h2 className = 'hello'>{`Hello ${this.props.user.username}`}<br></br>{`you have ${this.props.notes.length} ${this.props.notes.length === 1 ? 'note' : 'notes'}`}</h2>
+            <button className = 'deleteAll' onClick = {() => this.props.deleteAll(this.props.user._id)}>Delete all</button>
             <form onSubmit = {this.handleSubmit}>
                 <textarea rows = '20'
                 className = "notes"
