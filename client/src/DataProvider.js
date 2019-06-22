@@ -98,14 +98,18 @@ class NotesProvider extends Component {
 
 
     deleteAll = (id) => {
-        var answer = window.confirm("Are you sure you want to delete all your saved notes?")
-            if(answer){
-                axios.delete(`notes/delete/${id}`).then(response => {
-                alert(response.data)
-                })
-                this.setState({
-                    notes: []
-                })
+        if(this.state.notes.length === 0){
+            alert("you don't have any saved notes")
+        }else{
+            var answer = window.confirm("Are you sure you want to delete all your saved notes?")
+                if(answer){
+                    axios.delete(`notes/delete/${id}`).then(response => {
+                    alert(response.data)
+                    })
+                    this.setState({
+                        notes: []
+                    })
+                }
         }
     }   
     
