@@ -38,7 +38,6 @@ body{
     background-color: rgba(156, 92, 32, 0.918);
     font-weight: bolder;
     color:white;
-
 }
 
  .login1{
@@ -160,6 +159,10 @@ body{
     width: 120pt;
     justify-content: space-around;
     margin-top:10pt;
+}
+
+button{
+    cursor: pointer;
 }
 
 
