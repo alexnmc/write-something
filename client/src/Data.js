@@ -61,7 +61,7 @@ class Data extends Component{
     
     return(
         <div className = 'data'>
-            <h2 className = 'hello'>{`Hello ${this.props.user.username}`}</h2>
+            <h2 className = 'hello'>{`Hello ${this.props.user.username}`}<br></br>{`you have ${this.props.notes.length} ${this.props.notes.length === 1 ? 'note' : 'notes'}`}</h2>
             <form onSubmit = {this.handleSubmit}>
                 <textarea rows = '20'
                 className = "notes"
@@ -71,7 +71,7 @@ class Data extends Component{
                 value = {this.props.newNotes}
                 onChange= {this.props.handleChange2}>
                 </textarea>
-                <button className = 'loginButton'>Save</button>
+                <button className = 'saveButton'>Save</button>
             </form>
             <h1>write something</h1>
             <button  className = 'logout' onClick = {this.props.logout}>Log out</button>
