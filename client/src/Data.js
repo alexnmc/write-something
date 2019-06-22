@@ -76,7 +76,11 @@ class Data extends Component{
             </form>
             <h1>write something</h1>
             <div className = 'alltext2'>
-                {notes}
+                {this.props.notes.length > 0?
+                  notes
+                  :
+                  <p className = 'noNotes'>no entries</p>
+                }
             </div>
         </div>
     )

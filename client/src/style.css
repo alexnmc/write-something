@@ -24,7 +24,7 @@ body{
     font-size:12pt;
     margin-top:5pt;
     border-radius: 3px;
-    background-color: rgb(172, 92, 0);
+    background-color: rgba(156, 92, 32, 0.918);
     font-weight: bolder;
     color:white;
 }
@@ -70,7 +70,7 @@ body{
 .login{
     background-color: rgba(82, 40, 12, 0.863);
     width:270pt;
-    height:320pt;
+    height:335pt;
     color:white;
     border: 2px solid rgb(218, 218, 218);
     border-radius:5px;
@@ -101,8 +101,7 @@ body{
     justify-content: center;
     align-items: center;
     width:370pt;
-    
-    
+   
 }
 
 .alltext2{
@@ -164,6 +163,13 @@ h1{
     margin-top: -10vh;
 }
 
+.mainH1{
+     margin-left: -30vw;
+     margin-top:20pt;
+     position: fixed;
+     font-size:28pt;
+}
+
 form{
     display:flex;
     flex-direction: column;
@@ -174,8 +180,8 @@ form{
 
 textarea{
     width:350pt;
-    height:200pt;
-    margin-top:100pt;
+    height:210pt;
+    margin-top:120pt;
     font-size: 14pt;
     padding:5pt;
 }
@@ -194,6 +200,14 @@ h3{
     font-family: 'arial';
     color: rgb(124, 159, 255);
     margin-bottom:5pt;
+}
+
+.noNotes{
+    color: white;
+    font-size:17pt;
+    font-family: 'arial black';
+    margin:auto;
+    margin-top:35vh;
 }
 
 .youwrote{
