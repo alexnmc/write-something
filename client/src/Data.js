@@ -72,7 +72,6 @@ class Data extends Component{
                 </textarea>
                 <button className = 'saveButton'>Save</button>
             </form>
-            <h1>write something</h1>
             <button  className = 'logout' onClick = {this.props.logout}>Log out</button>
             <div className = 'alltext2'>
                 {this.props.notes.length > 0?
