@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Login from './Login'
-import {withUser} from './UserProvider'
+import {withUser} from './Context/UserProvider'
 import Home from './Home'
 
 

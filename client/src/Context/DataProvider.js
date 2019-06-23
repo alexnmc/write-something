@@ -17,7 +17,6 @@ class NotesProvider extends Component {
     }
 
     
-    
     saveNotes = (id) => {
         axios.post(`/notes`, {notes: this.state.newNotes,  userID: id, date: new Date()}).then(res => {
             this.getNotes(id)
@@ -27,7 +26,6 @@ class NotesProvider extends Component {
         })
     }
 
-   
     getNotes = (id) => {
             axios.get(`/notes/${id}`).then(res => { // careful with the endpoint...
             this.setState(prevState => {
@@ -38,7 +36,6 @@ class NotesProvider extends Component {
         })
     }
     
-    
     handleChange2 = (e) => {
         e.preventDefault()
         const { name, value } = e.target
@@ -47,7 +44,6 @@ class NotesProvider extends Component {
         })
     }
 
-   
     handleToggler = (id, notes) => {
         this.state.notes.map(item => item._id === id ? item.toggle = false : item.toggle = true) 
         this.setState({
@@ -55,7 +51,6 @@ class NotesProvider extends Component {
         // I set edit to the item's notes so the input field displays the notes to be edited!
         })
     }
-
 
     handleTogglerReset = (e) => {
         e.preventDefault()
@@ -65,7 +60,6 @@ class NotesProvider extends Component {
         })
     }
     
-    
     handleEdit = (id) => {
         const updates = {
             notes: this.state.edit,
@@ -73,7 +67,6 @@ class NotesProvider extends Component {
         }
         this.handleEditSubmit(id, updates)
     }
-    
     
     handleEditSubmit = (id, updates) => {
         axios.put(`/notes/${id}`, updates).then(response => {
@@ -86,7 +79,6 @@ class NotesProvider extends Component {
         })
     }
     
-    
     handleDelete = (id) => {
         axios.delete(`/notes/${id}`).then(res => {
                 this.setState(prevState=>({   //I use prevState so the requested booking gets deleted without refreshing
@@ -96,20 +88,19 @@ class NotesProvider extends Component {
         })
     }
 
-
     deleteAll = (id) => {
         if(this.state.notes.length === 0){
             alert("you don't have any saved notes")
         }else{
             var answer = window.confirm("Are you sure you want to delete all your saved notes?")
-                if(answer){
-                    axios.delete(`notes/delete/${id}`).then(response => {
-                    alert(response.data)
-                    })
-                    this.setState({
-                        notes: []
-                    })
-                }
+            if(answer){
+                axios.delete(`notes/delete/${id}`).then(response => {
+                alert(response.data)
+                })
+                this.setState({
+                    notes: []
+                })
+            }    
         }
     }   
     
@@ -138,6 +129,6 @@ export default NotesProvider
 
 export const withData= C => props => (
     <Context.Consumer>
-        {value => <C {...props} {...value}/> }
+        { value => <C {...props} {...value}/> }
     </Context.Consumer>
 )

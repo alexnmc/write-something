@@ -1,6 +1,6 @@
 import React ,{Component} from 'react'
-import {withUser} from './UserProvider'
-import {withData} from './DataProvider'
+import {withUser} from './Context/UserProvider'
+import {withData} from './Context/DataProvider'
 import moment from 'moment'
 
 

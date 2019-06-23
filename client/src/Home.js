@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {withUser} from './UserProvider'
+import {withUser} from './Context/UserProvider'
 import Data from './Data'
 
 
@@ -11,7 +11,6 @@ class Home extends Component {
             <div className = "home">
                 <Data/>
                 <p className = 'deleteAcount' onClick = {() => this.props.handleErase(this.props.user._id)}>delete account</p>
-               
             </div>
         )
     }
