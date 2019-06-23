@@ -75,8 +75,6 @@ body{
     font-size: 20pt;
     font-family: helvetica;
     margin:auto;
-   
-   
 }
 
 .login{
@@ -120,16 +118,12 @@ body{
     color:rgb(59, 27, 0)
 }
 
-
-
 .alltext{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width:370pt;
-   
-   
 }
 
 .alltext2{
