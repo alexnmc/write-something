@@ -19,9 +19,7 @@ const notesSchema = new Schema({
     date: {
         type: Date,
         required: true
-        
     }
-
 })
     
 

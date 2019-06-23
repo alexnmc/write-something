@@ -20,8 +20,14 @@ class Data extends Component{
 
    
    render(props){ 
+
+    let arr = this.props.notes
     
-     let notes = this.props.notes.map(item =>{
+        arr.sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date) // show newest note on top..
+        })  
+    
+     let notes = arr.map(item =>{
          return(
             <div className = 'alltext'>
             { item.toggle?
