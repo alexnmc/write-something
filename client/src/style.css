@@ -333,7 +333,7 @@ h3{
     .login{
         background-color: rgba(82, 40, 12, 0.863);
         width:190pt;
-        height:265pt;
+        height:280pt;
         color:white;
         border: 2px solid rgb(218, 218, 218);
         border-radius:5px;
@@ -353,7 +353,7 @@ h3{
    
    .saveButton{
        width: 90vw;
-       height:20pt;
+       height:22pt;
        font-size:10pt;
        border-radius: 3px;
        background-color: rgba(156, 92, 32, 0.918);
@@ -385,11 +385,9 @@ h3{
     width:100vw;
    }
   
-  
-  
    body{
       overflow: scroll;
-  }
+   }
   
     .data{
        display: flex;
@@ -417,7 +415,7 @@ h3{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-bottom: 50pt;
+    margin-bottom: 20vh;
 
    }
    
@@ -458,7 +456,7 @@ h3{
    
    .alltext2{
        height:130pt;
-       margin-top:8vh;
+       margin-bottom:0vh;
        padding-bottom:2pt;
     }
 
