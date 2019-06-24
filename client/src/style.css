@@ -333,7 +333,7 @@ h3{
     .login{
         background-color: rgba(82, 40, 12, 0.863);
         width:190pt;
-        height:255pt;
+        height:265pt;
         color:white;
         border: 2px solid rgb(218, 218, 218);
         border-radius:5px;
@@ -365,7 +365,8 @@ h3{
    .mainH1{
        font-size: 18pt;
        margin:auto;
-       margin-top: -40vh;
+      
+       position:relative
    }
 
    .login,
@@ -447,7 +448,7 @@ h3{
    
    .alltext2{
        height:130pt;
-       margin-top:25pt;
+       margin-top:8vh;
        padding-bottom:2pt;
     }
 
@@ -457,7 +458,7 @@ h3{
 
     .editInput{
        width:70vw;
-       height:50pt;
+       height:75pt;
     }
 
     .buttonWrap{
