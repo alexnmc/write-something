@@ -388,9 +388,7 @@ h3{
     width:100vw;
    }
   
-   body{
-      overflow: scroll;
-   }
+  
   
     .data{
        display: flex;
@@ -418,13 +416,13 @@ h3{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-bottom: 20vh;
-
-   }
+    margin-bottom: 17vh;
+    
+}
    
    .notes{
        width: 90vw;
-       height: 20vh;
+       height: 17vh;
        margin: 10pt;
     }
 
@@ -442,7 +440,7 @@ h3{
 
    .hello{
        margin-top:-45vh;
-       font-size: 11.5pt;
+       font-size: 12pt;
        position: absolute;
    }
 
@@ -469,7 +467,7 @@ h3{
 
     .editInput{
        width:70vw;
-       height:75pt;
+       height:60pt;
     }
 
     .buttonWrap{
@@ -482,6 +480,8 @@ h3{
         width:90vw;
     }
 
+    
+    .editButton,
     .deleteButton{
         font-size: 7pt;
         font-weight: bolder;
