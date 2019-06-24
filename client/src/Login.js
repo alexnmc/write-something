@@ -7,8 +7,8 @@ const Login = (props) => {
     
         return(
             <div className = 'mainLogin'>
+                <h1 className = 'mainH1'>write something</h1>
                 <div className = 'login'>
-                    <h1 className = 'mainH1'>write something</h1>
                     {props.toggle ?
                             <div className = 'login2'>
                                 <form  onSubmit = {props.handleLogin} className='loginForm'>

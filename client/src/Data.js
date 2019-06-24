@@ -24,7 +24,7 @@ class Data extends Component{
     let arr = this.props.notes
     
         arr.sort(function (a, b) {
-            return new Date(b.date) - new Date(a.date)   //show newest on top..
+            return new Date(b.date) - new Date(a.date)   // b-a show newest on top..
         })  
     
     let notes = arr.map(item =>{
