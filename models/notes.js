@@ -19,6 +19,11 @@ const notesSchema = new Schema({
     date: {
         type: Date,
         required: true
+    },
+
+    editTime: {
+        type: Date,
+        default: null
     }
 })
     

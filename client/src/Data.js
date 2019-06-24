@@ -24,17 +24,18 @@ class Data extends Component{
     let arr = this.props.notes
     
         arr.sort(function (a, b) {
-            return new Date(b.date) - new Date(a.date) // show newest note on top..
+            return new Date(b.date) - new Date(a.date)   //show newest on top..
         })  
     
-     let notes = arr.map(item =>{
-         return(
+    let notes = arr.map(item =>{
+        return(
             <div className = 'alltext'>
-            { item.toggle?
+            {item.toggle?
                 <div key = {item._id} className = 'showNotes'>
                     <div className = 'space'>
                         <h3>{moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</h3> 
-                        <p className = 'youwrote'>you wrote:</p>         
+                       {item.editTime ? <h3 className = 'edit1'><span className = 'edit2'>last edit:</span><span className = 'edit3'> {moment(item.editTime).format('MMMM Do YYYY, h:mm:ss a')}</span></h3> : ''}
+                        <p className = 'youwrote'>you wrote:</p>          
                         <h2 className = 'h2'>{item.notes}</h2> 
                     </div> 
                     <div className = 'buttonWrap'>
@@ -45,7 +46,7 @@ class Data extends Component{
                 :
                 <div className = 'showNotes'>
                     <textarea
-                    className = "edit"
+                    className = "editInput"
                     type='text'
                     name='edit'
                     value={this.props.edit}
@@ -53,14 +54,14 @@ class Data extends Component{
                     >
                     </textarea>
                     <div className = 'buttonWrap'>
-                        <button className = "editButton" type="button" onClick = {() => this.props.handleEdit(item._id)}>Save</button>
+                        <button className = "editButton" type="button" onClick = {() => this.props.handleEdit(item._id, item.notes)}>Save</button>
                         <button className = "editButton" type="button" onClick = {this.props.handleTogglerReset}>Exit</button>
                     </div>
                 </div>
             }
             </div>
-         )
-     })
+        )
+    })
     
     
     return(

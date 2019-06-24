@@ -149,7 +149,7 @@ body{
     min-height:100pt
 }
 
-.edit{
+.editInput{
     height:79.5pt;
     margin-top: 9.5pt;
 }
@@ -238,7 +238,24 @@ h3{
     font-family: 'arial';
     color: rgb(124, 159, 255);
     margin-bottom:0pt;
-   
+}
+
+.edit1{
+    margin:0pt;
+    height:auto;
+}
+
+.edit2{
+    margin:0pt;
+    color:rgb(255, 102, 0);
+    font-family: 'arial';
+    font-size: 12.5pt;
+    font-weight: 100
+}
+
+.edit3{
+    font-size:12pt;
+    margin:0pt;
 }
 
 .noNotes{

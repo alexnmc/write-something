@@ -52,20 +52,23 @@ class NotesProvider extends Component {
         })
     }
 
-    handleTogglerReset = (e) => {
-        e.preventDefault()
+    handleTogglerReset = () => {
         this.state.notes.map(item => item.toggle = true) 
         this.setState({
             refresh: 'on'  // I have to re-render context so it can send the new props....
         })
     }
     
-    handleEdit = (id) => {
-        const updates = {
-            notes: this.state.edit,
-            date: new Date()
+    handleEdit = (id, notes) => {
+        if(notes === this.state.edit || !this.state.edit){ // it only edits if there is a change, you can't edit to an empty input
+            this.handleTogglerReset() 
+        }else{
+            const updates = {
+                notes: this.state.edit, // if the edit input is empty save the old notes
+                editTime: new Date() 
+            }
+            this.handleEditSubmit(id, updates)
         }
-        this.handleEditSubmit(id, updates)
     }
     
     handleEditSubmit = (id, updates) => {
