@@ -342,7 +342,7 @@ h3{
     
     .loginButton{
        width:80pt;
-       height:20pt;
+       height:21pt;
        font-size:10pt;
        margin-top:7pt;
        border-radius: 3px;
@@ -363,9 +363,12 @@ h3{
     }
    
    .mainH1{
-       font-size: 18pt;
+       font-size: 20pt;
        margin:auto;
-       position:relative
+       position:relative;
+       font-family: 'arial';
+       color: rgb(75, 33, 9);
+       font-weight: bolder;
    }
 
    
@@ -480,6 +483,7 @@ h3{
     }
 
     .deleteButton{
-        font-size: 8pt;
+        font-size: 7pt;
+        font-weight: bolder;
     }
 }
