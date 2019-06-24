@@ -203,7 +203,7 @@ h1{
 
 .mainH1{
      margin-left: -30vw;
-     margin-top:-120pt;
+     margin-top:-160pt;
      position: fixed;
      font-size: 32pt;
 }
@@ -294,11 +294,12 @@ h3{
     display: inline;
 }
 
+
 .mainLogin{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 91vh;
 }
 
 
