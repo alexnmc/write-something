@@ -343,7 +343,7 @@ h3{
     .loginButton{
        width:80pt;
        height:20pt;
-       font-size:12pt;
+       font-size:10pt;
        margin-top:7pt;
        border-radius: 3px;
        background-color: rgba(156, 92, 32, 0.918);
@@ -352,9 +352,9 @@ h3{
    }
    
    .saveButton{
-       width:95vw;
+       width: 90vw;
        height:20pt;
-       font-size:12pt;
+       font-size:10pt;
        border-radius: 3px;
        background-color: rgba(156, 92, 32, 0.918);
        font-weight: bolder;
@@ -365,20 +365,29 @@ h3{
    .mainH1{
        font-size: 18pt;
        margin:auto;
-      
        position:relative
    }
 
-   .login,
-   .mainLogin,
-   .appjs{
+   
+   .mainLogin{
        display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
    }
 
-  body{
+   .appjs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height:100vh;
+    width:100vw;
+   }
+  
+  
+  
+   body{
       overflow: scroll;
   }
   
@@ -443,7 +452,8 @@ h3{
 
    .logout{
        margin-top:0pt;
-       height:20pt
+       height:20pt;
+       font-size: 10pt;
    }
    
    .alltext2{
@@ -469,5 +479,9 @@ h3{
     .showNotes{
         margin-left: -10pt;
         width:90vw;
+    }
+
+    .deleteButton{
+        font-size: 8pt;
     }
 }
