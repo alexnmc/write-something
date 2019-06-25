@@ -31,9 +31,9 @@ body{
 
 .saveButton{
     width: 360pt;
-    height:24pt;
+    height:25pt;
     font-size:12pt;
-    margin-top:5pt;
+    margin-top:3pt;
     border-radius: 3px;
     background-color: rgba(156, 92, 32, 0.918);
     font-weight: bolder;
@@ -236,6 +236,7 @@ h3{
     font-family: 'arial';
     color: rgb(113, 151, 255);
     margin-bottom:0pt;
+    font-size:14pt;
 }
 
 .edit1{
@@ -245,7 +246,7 @@ h3{
 
 .edit2{
     margin:0pt;
-    color:rgb(255, 107, 49);
+    color:rgb(255, 102, 0);
     font-family: 'arial';
     font-size: 12pt;
     font-weight: 100
