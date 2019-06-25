@@ -166,7 +166,7 @@ button{
 }
 
 .deleteAll{
-    width:80pt;
+    width: 75pt;
     height:20pt;
     font-size:10pt;
     border-radius: 3px;
@@ -193,7 +193,6 @@ button{
    font-family: 'arial';
    color: rgb(255, 255, 255);
 }
-
 
 h1{
     font-family: 'arial black';
@@ -235,7 +234,7 @@ textarea{
 
 h3{
     font-family: 'arial';
-    color: rgb(124, 159, 255);
+    color: rgb(113, 151, 255);
     margin-bottom:0pt;
 }
 
@@ -246,9 +245,9 @@ h3{
 
 .edit2{
     margin:0pt;
-    color:rgb(255, 102, 0);
+    color:rgb(255, 107, 49);
     font-family: 'arial';
-    font-size: 12.5pt;
+    font-size: 12pt;
     font-weight: 100
 }
 

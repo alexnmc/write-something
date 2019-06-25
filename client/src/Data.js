@@ -34,7 +34,7 @@ class Data extends Component{
                 <div key = {item._id} className = 'showNotes'>
                     <div className = 'space'>
                         <h3>{moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</h3> 
-                       {item.editTime ? <h3 className = 'edit1'><span className = 'edit2'>last edit:</span><span className = 'edit3'> {moment(item.editTime).format('MMMM Do YYYY, h:mm:ss a')}</span></h3> : ''}
+                       {item.editTime ? <h3 className = 'edit1'><span className = 'edit2'>Last edit:</span><span className = 'edit3'> {moment(item.editTime).format('MMMM Do YYYY, h:mm:ss a')}</span></h3> : ''}
                         <p className = 'youwrote'>you wrote:</p>          
                         <h2 className = 'h2'>{item.notes}</h2> 
                     </div> 
