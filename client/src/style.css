@@ -8,7 +8,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+
 
 .appjs{
     height:100vh;
@@ -79,11 +82,11 @@ body{
 
 .login{
     background-color: rgba(82, 40, 12, 0.863);
-    width:270pt;
-    height:335pt;
+    width:275pt;
+    height:340pt;
     color:white;
     border: 2px solid rgb(218, 218, 218);
-    border-radius:5px;
+    border-radius:26px;
 }
 
 .home{
