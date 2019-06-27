@@ -11,8 +11,6 @@ body{
     
 }
 
-
-
 .appjs{
     height:100vh;
     width: 100vw;
@@ -25,9 +23,9 @@ body{
     width:90pt;
     height:24pt;
     font-size:12pt;
-    margin-top:5pt;
+    margin-top: 10pt;
     border-radius: 3px;
-    background-color: rgba(156, 92, 32, 0.918);
+    background-color: rgba(158, 69, 10, 0.918);
     font-weight: bolder;
     color:white;
 }
@@ -38,7 +36,7 @@ body{
     font-size:12pt;
     margin-top:3pt;
     border-radius: 3px;
-    background-color: rgba(156, 92, 32, 0.918);
+    background-color: rgba(158, 69, 10, 0.918);
     font-weight: bolder;
     color:white;
 }
@@ -81,9 +79,9 @@ body{
 }
 
 .login{
-    background-color: rgba(82, 40, 12, 0.863);
+    background-color: rgba(82, 28, 12, 0.877);
     width:275pt;
-    height:340pt;
+    height:350pt;
     color:white;
     border: 2px solid rgb(218, 218, 218);
     border-radius:26px;
@@ -205,9 +203,9 @@ h1{
 
 .mainH1{
      margin-left: -30vw;
-     margin-top:-155pt;
+     margin-top:-153pt;
      position: fixed;
-     font-size: 32pt;
+     font-size: 35pt;
 }
 
 form{
@@ -230,7 +228,7 @@ textarea{
     justify-content: space-around;
     width:100vw;
     height:83vh;
-    background-color:rgba(82, 40, 12, 0.911);
+    background-color: rgba(70, 27, 14, 0.972);
     border-top:2px solid white;
     border-bottom:2px solid white;
 }
