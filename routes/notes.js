@@ -7,7 +7,6 @@ const Notes = require("../models/notes")
 
 
 notesRouter.post('/', (req, res, next) => {      // regular post request without checking anything in the database
-    
     const newNotes = new Notes(req.body)
     newNotes.save((err, notes) => {
         if (err) {
@@ -21,7 +20,6 @@ notesRouter.post('/', (req, res, next) => {      // regular post request without
 
 
 notesRouter.get('/:id', (req, res, next) => {    
-    
     Notes.find({userID: req.params.id}, (err, notes) => {
         if(err) {
             res.status(500)
@@ -29,13 +27,11 @@ notesRouter.get('/:id', (req, res, next) => {
         }
         return res.status(200).send(notes)
     })
-   
 })
 
 
 
 notesRouter.get('/', (req, res, next) => {    
-    
     Notes.find((err, notes) => {
         if(err) {
             res.status(500)
@@ -43,12 +39,10 @@ notesRouter.get('/', (req, res, next) => {
         }
         return res.status(200).send(notes)
     })
-   
 })
 
 
 notesRouter.delete('/', (req, res, next) => {
-    
     Notes.remove((err, data) => {      // for postman testing, deletes everything !
         if (err) {
             res.status(500)
@@ -59,8 +53,7 @@ notesRouter.delete('/', (req, res, next) => {
 })
 
 
-notesRouter.delete('/:id', (req, res, next) => {     //delete one by ID for admin use only
-     
+notesRouter.delete('/:id', (req, res, next) => {     //delete one by ID 
     Notes.findOneAndDelete({_id: req.params.id} , (err, data) => {
         if (err) {
             res.status(500)
@@ -74,7 +67,7 @@ notesRouter.delete('/:id', (req, res, next) => {     //delete one by ID for admi
 notesRouter.put('/:id',  (req, res, next) => {      // express router reads the endpoint, and after the : sign is a variable containing a number, the id number of the item ..:id is a variable changing
         Notes.findOneAndUpdate(
                 {_id: req.params.id},
-                req.body,                           // update existing booking with this object this is the 2nd argument of the axios.put
+                req.body,                           // update existing notes with this object this is the 2nd argument of the axios.put
                 {new: true},                 
                 (err, updatedNotes) => {
                     if (err) {
@@ -87,8 +80,7 @@ notesRouter.put('/:id',  (req, res, next) => {      // express router reads the 
 })  
 
 
-notesRouter.delete('/delete/:id', (req, res, next) => {  //delete all by ID 
-     
+notesRouter.delete('/delete/:id', (req, res, next) => {  // deletes all the notes of the user
     Notes.remove({userID: req.params.id},(err, data) => {
         if (err) {
             res.status(500)
