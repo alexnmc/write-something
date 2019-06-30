@@ -48,7 +48,7 @@ class NotesProvider extends Component {
         this.state.notes.map(item => item._id === id ? item.toggle = false : item.toggle = true) 
         this.setState({
             edit: notes  // I have to re-render context so it can send the new props....
-        // I set edit to the item's notes so the input field displays the notes to be edited!
+        // I set edit to the item's notes so the input field displays the notes you want to edit!
         })
     }
 
@@ -64,7 +64,7 @@ class NotesProvider extends Component {
             this.handleTogglerReset() 
         }else{
             const updates = {
-                notes: this.state.edit, // if the edit input is empty save the old notes
+                notes: this.state.edit,
                 editTime: new Date() 
             }
             this.handleEditSubmit(id, updates)
@@ -84,7 +84,7 @@ class NotesProvider extends Component {
     
     handleDelete = (id) => {
         axios.delete(`/notes/${id}`).then(res => {
-                this.setState(prevState=>({   //I use prevState so the requested booking gets deleted without refreshing
+                this.setState(prevState=>({   //I use prevState so the requested note gets deleted without refreshing
                     notes: prevState.notes.filter(item => item._id !== id)
                                             // filters the bookings array in state, updates state with a new array with all the items in the array which does NOT have the item._id ....
             }))
