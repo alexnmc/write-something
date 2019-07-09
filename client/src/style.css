@@ -22,7 +22,7 @@ body{
  .logout,
  .loginButton{
     width:90pt;
-    height:24pt;
+    height:23pt;
     font-size:12pt;
     margin-top: 10pt;
     border-radius: 3px;
@@ -99,8 +99,8 @@ body{
 
 .logout{
     width:90pt;
-    height:24pt;
-    font-size:12pt;
+    height:22pt;
+    font-size:11.5pt;
     position:fixed;
     margin-top:75vh;
 }
@@ -195,9 +195,11 @@ button{
 }
 
 h1{
+    font-size:26pt;
     font-family: 'arial black';
     color: rgb(255, 255, 255);
     margin-top: -8vh;
+    margin-bottom:7pt;
 }
 
 .mainH1{
@@ -226,7 +228,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     width:100vw;
-    height:83vh;
+    height:84vh;
     background-color: rgba(70, 27, 14, 0.972);
     border-top:2px solid white;
     border-bottom:2px solid white;
