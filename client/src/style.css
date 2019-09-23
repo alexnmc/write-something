@@ -18,9 +18,18 @@ body{
     background-color: rgba(66, 27, 14, 0.274);
 }
 
-
- .logout,
- .loginButton{
+.logout{
+    width: 100pt;
+    height: 25pt;
+    font-size:12pt;
+    margin-top: 10pt;
+    border-radius: 3px;
+    background-color: rgba(158, 69, 10, 0.918);
+    font-weight: bolder;
+    color:white;
+}
+ 
+.loginButton{
     width: 150pt;
     height:30pt;
     font-size:12pt;
