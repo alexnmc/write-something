@@ -6,7 +6,9 @@ import Data from './Data'
 
 
 class Home extends Component {
+  
     render(props){
+        
         return (
             <div className = "home">
                 <h1>write something</h1>

@@ -15,14 +15,14 @@ body{
     height:100vh;
     width: 100vw;
     position:relative;
-    background-color: rgba(82, 28, 12, 0.158);
+    background-color: rgba(66, 27, 14, 0.274);
 }
 
 
  .logout,
  .loginButton{
-    width:90pt;
-    height:23pt;
+    width: 150pt;
+    height:30pt;
     font-size:12pt;
     margin-top: 10pt;
     border-radius: 3px;
@@ -43,12 +43,12 @@ body{
 }
 
  .login1{
-    width: 132pt;
-    height: 23.5pt;
+    width: 150pt;
+    height:30pt;
     border: 1px solid  rgba(2, 2, 2, 0.74);
-    background-color:  rgb(255, 235, 209);
+    background-color:  rgb(211, 190, 163);
     color:black;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-top:7pt;
     padding-left:3.5pt;
     font-size:11.5pt
