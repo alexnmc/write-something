@@ -317,16 +317,6 @@ h3{
 
 
 @media only screen and (max-width: 600px) {
-    .appjs{
-        height:100vh;
-        width: 100vw;
-        background-color: rgba(66, 27, 14, 0.274);
-        display:flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    
-    
     
     .loginForm,
     .login2{
@@ -355,8 +345,8 @@ h3{
     
     .login{
         background-color: rgba(82, 40, 12, 0.863);
-        width:190pt;
-        height:280pt;
+        height:100vh;
+        width:100vw;
         color:white;
         border: 2px solid rgb(218, 218, 218);
         border-radius:5px;
