@@ -117,7 +117,7 @@ body{
 .deleteAcount{
     margin-top: 44vh;
     margin-left: 40vw;
-    font-size:15pt;
+    font-size:12pt;
     position:fixed;
     font-family: 'tahoma';
     color: rgb(251, 251, 251);
@@ -247,7 +247,7 @@ h3{
     font-family: 'arial';
     color: rgb(113, 151, 255);
     margin-bottom:0pt;
-    font-size:14pt;
+    font-size:12.5pt;
 }
 
 .edit1{
@@ -260,7 +260,7 @@ h3{
     color:rgb(255, 102, 0);
     font-family: 'arial';
     font-size: 12pt;
-    font-weight: 100
+    font-weight:600
 }
 
 .edit3{
