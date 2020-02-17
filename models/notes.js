@@ -12,8 +12,8 @@ const notesSchema = new Schema({
     },
 
     toggle: {
-        type: Boolean,
-        default: true 
+        type: String,
+        default: 'off' 
     },
    
     date: {

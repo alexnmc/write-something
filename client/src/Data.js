@@ -19,18 +19,20 @@ class Data extends Component{
    }
 
    
-   render(props){ 
+   render(){ 
 
-    let arr = this.props.notes
-    
+    let arr = [...this.props.notes]
+  
         arr.sort(function (a, b) {
             return new Date(b.date) - new Date(a.date)   // b-a show newest on top..
-        })  
+        }) 
+        console.log('props', arr)
+     
     
     let notes = arr.map(item =>{
         return(
             <div className = 'alltext'>
-            {item.toggle?
+            {item.toggle === 'off' ?
                 <div key = {item._id} className = 'showNotes'>
                     <div className = 'space'>
                         <h3>{moment(item.date).format('MMMM Do YYYY, h:mm:ss a')}</h3> 

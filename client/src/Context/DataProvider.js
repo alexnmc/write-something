@@ -45,17 +45,19 @@ class NotesProvider extends Component {
     }
 
     handleToggler = (id, notes) => {
-        this.state.notes.map(item => item._id === id ? item.toggle = false : item.toggle = true) 
+        let arr = [...this.state.notes].map(item => item._id === id ? {...item , toggle:' on'} : {...item , toggle: 'off'})
+        console.log(arr)
         this.setState({
-            edit: notes  // I have to re-render context so it can send the new props....
+            notes: arr,
+            edit: notes  
         // I set edit to the item's notes so the input field displays the notes you want to edit!
         })
     }
 
     handleTogglerReset = () => {
-        this.state.notes.map(item => item.toggle = true) 
+        let arr = [...this.state.notes].map(item => {return {...item, toggle: 'off'}})
         this.setState({
-            refresh: 'on'  // I have to re-render context so it can send the new props....
+            notes: arr
         })
     }
     
