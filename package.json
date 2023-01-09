@@ -18,7 +18,7 @@
     "bcrypt": "^3.0.6",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^8.3.0",
     "json-parser": "^3.0.0",
     "mongoose": "^5.6.0",
     "morgan": "^1.9.1"
